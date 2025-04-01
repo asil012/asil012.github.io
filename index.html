@@ -19,26 +19,36 @@
     <div class="wrapper">
       <header>
         
-        <img src="/documents/images/profile.png" alt="picture of me :)", width="420"> 
+        <img id="profile-pic" alt="picture of me :)" width="420">
 
-          <!-- <p> -->
-          <h1>Julian Asilis</h1>
+        <script>
+          const imgElement = document.getElementById('profile-pic');
+          const rand = Math.random();
+          if (rand < 0.70) {
+            imgElement.src = "/documents/images/profile.png";
+          } else {
+            imgElement.src = "/documents/images/profile_ghibli.png";
+          }
+        </script>
 
-          Ph.D. Student <br> 
-          Department of Computer Science <br>
-          University of Southern California <br>         
-          <tt>asilis at usc.edu</tt> <br> <br> 
+        <!-- <p> -->
+        <h1>Julian Asilis</h1>
+
+        Ph.D. Student <br> 
+        Department of Computer Science <br>
+        University of Southern California <br>         
+        <tt>asilis at usc.edu</tt> <br> <br> 
 
 
-          <a href="./documents/Asilis_CV.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./documents/images/cv.png" alt="twitter logo" style="width:36px" class="sm-icon">
-          </a>
-          <a href="https://twitter.com/julian_asilis" target="_blank">
-            <img src="./documents/images/twitter.png" alt="twitter logo" style="width:36px;height:36px;" class="sm-icon">
-          </a>
-          <a href="https://scholar.google.com/citations?user=Cu3RV2UAAAAJ&hl=en" target="_blank">
-            <img src="./documents/images/google_scholar2.png" alt="google scholar logo"  style="width:36px;height:36px;" class="sm-icon">
-          </a>
+        <a href="./documents/Asilis_CV.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="./documents/images/cv.png" alt="twitter logo" style="width:36px" class="sm-icon">
+        </a>
+        <a href="https://twitter.com/julian_asilis" target="_blank">
+          <img src="./documents/images/twitter.png" alt="twitter logo" style="width:36px;height:36px;" class="sm-icon">
+        </a>
+        <a href="https://scholar.google.com/citations?user=Cu3RV2UAAAAJ&hl=en" target="_blank">
+          <img src="./documents/images/google_scholar2.png" alt="google scholar logo"  style="width:36px;height:36px;" class="sm-icon">
+        </a>
 
       </header>
       <section>
