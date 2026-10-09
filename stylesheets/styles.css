@@ -107,6 +107,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  margin-left:-6px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -172,6 +173,7 @@ header ul a strong {
 section {
   width:540px;
   float:right;
+  margin-right:-6px;
   padding-bottom:50px;
 }
 
@@ -246,6 +248,7 @@ footer {
   }
 
   header {
+    margin-left:0;
     padding-right:320px;
   }
 
