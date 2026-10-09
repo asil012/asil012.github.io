@@ -107,7 +107,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
-  margin-left:-6px;
+  margin-left:-10px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -173,8 +173,24 @@ header ul a strong {
 section {
   width:540px;
   float:right;
-  margin-right:-6px;
+  margin-right:-10px;
   padding-bottom:50px;
+}
+
+.about-heading {
+  margin-bottom:14px;
+}
+
+.about-copy {
+  margin-bottom:32px;
+}
+
+.about-copy p {
+  margin-bottom:14px;
+}
+
+.about-copy p:last-child {
+  margin-bottom:0;
 }
 
 .research-card {
@@ -189,7 +205,15 @@ section {
 }
 
 .research-card h2 {
-  margin-bottom:18px;
+  margin-bottom:14px;
+}
+
+.research-card h2::after {
+  content:"";
+  display:block;
+  width:90%;
+  margin-top:10px;
+  border-bottom:1px solid rgba(34,34,34,0.12);
 }
 
 .research-card ul {
@@ -209,6 +233,10 @@ section {
 
 .compact-sections h2 {
   margin-bottom:10px;
+}
+
+.compact-sections p + h2 {
+  margin-top:22px;
 }
 
 .compact-sections p {
